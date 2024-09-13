@@ -9,7 +9,6 @@ import img4 from '../assets/h4.jpg';
 import img5 from '../assets/h5.jpg';
 import img6 from '../assets/h6.jpg';
 import img7 from '../assets/m1.png';
-import { transform } from 'framer-motion';
 
 const Home = () => {
   return (
@@ -30,13 +29,13 @@ const Home = () => {
         </Heading>
 
         <Stack
-          h='full'
+          h='auto'
           p={'4'}
           alignItems={'center'}
           direction={['column','row']}
         >
           <Image src={img7} alt='12' h={['40','400']}/>
-          <Text letterSpacing={'widest'} lineHeight={'190&'} p={['4','16']} textAlign={'center'}>
+          <Text letterSpacing={'widest'} lineHeight={'190%'} p={['4','16']} textAlign={'center'}>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium nulla debitis praesentium voluptas laudantium veniam eos consequatur consequuntur cum dolorum doloremque, corporis, nihil nam error soluta maxime dolore porro eligendi dignissimos reprehenderit in quod? Magnam sunt voluptate autem, beatae laboriosam eius reprehenderit mollitia odit suscipit sequi a. Omnis repudiandae iusto id libero exercitationem labore animi consectetur eum cumque, laborum incidunt a consequuntur odit ipsam quibusdam quos earum assumenda tenetur consequatur quis, ab iure magni, quasi magnam. Doloribus sapiente, ea esse, voluptatem animi natus fugiat numquam soluta eius perferendis error voluptas quisquam nisi. Rem numquam porro laborum accusamus commodi, doloremque reprehenderit.
           </Text>
          
@@ -91,8 +90,8 @@ const MyCarousel = () => (
 
     <Box w={'full'} h={'100vh'}>
       <Image src={img1}
-          width="100%" 
-          height="100%" 
+          width="full" 
+          height="full" 
           objectFit="cover"
           alt="Image 2"/>
       <Heading color = {'white'} {...headingOptions}>Beyond Reality</Heading>
@@ -100,8 +99,8 @@ const MyCarousel = () => (
 
     <Box w={'full'} h={'100vh'}>
       <Image src={img2} 
-       width="100%" 
-       height="100%" 
+       width="full" 
+       height="full" 
        objectFit="cover"
        alt="Image 2"/>
       <Heading color = {'white'} {...headingOptions}>Gaming Redefined</Heading>
@@ -109,8 +108,8 @@ const MyCarousel = () => (
 
     <Box w={'full'} h={'100vh'}>
       <Image src={img3}
-       width="100%" 
-       height="100%" 
+        width="full" 
+        height="full" 
        objectFit="cover"
        alt="Image 2"/>
       <Heading color = {'white'} {...headingOptions}>Emmersive Experience</Heading>
@@ -118,8 +117,8 @@ const MyCarousel = () => (
 
     <Box w={'full'} h={'100vh'}>
       <Image src={img4}
-       width="100%" 
-       height="100%" 
+        width="full" 
+        height="full" 
        objectFit="cover"
        alt="Image 2"/>
       <Heading color = {'white'} {...headingOptions}>Level Up Your Game</Heading>
@@ -127,8 +126,8 @@ const MyCarousel = () => (
 
     <Box w={'full'} h={'100vh'}>
       <Image src={img5}
-       width="100%" 
-       height="100%" 
+        width="full" 
+        height="full" 
        objectFit="cover"
        alt="Image 2"/>
       <Heading color = {'white'} {...headingOptions}>Fuel Your Passion</Heading>
@@ -136,8 +135,8 @@ const MyCarousel = () => (
 
     <Box w={'full'} h={'100vh'}>
       <Image src={img6}
-       width="100%" 
-       height="100%" 
+        width="full" 
+        height="full" 
        objectFit="cover"
        alt="Image 2"/>
       <Heading color = {'white'} {...headingOptions}>Game On</Heading>
