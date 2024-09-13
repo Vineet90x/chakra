@@ -72,7 +72,6 @@ const headingOptions = {
   textShadow:"2px 2px 4px rgba(0, 0, 0, 0.7)",
   fontFamily:"Poppins, sans-serif",
   padding: '4',
-  size: '4xl',
 }
 
 const MyCarousel = () => (
@@ -88,58 +87,58 @@ const MyCarousel = () => (
   showThumbs={false}
   >
 
-    <Box w={'full'} h={['60vh', '100vh']}>
+    <Box w={'full'} h={['60vh', '90vh']}>
       <Image src={img1}
           width="full" 
           height="full" 
           objectFit="cover"
           alt="Image 2"/>
-      <Heading color = {'white'} {...headingOptions}>Beyond Reality</Heading>
+      <Heading size= {['2xl','4xl']} color = {'white'} {...headingOptions}>Beyond Reality</Heading>
     </Box>
 
-    <Box w={'full'} h={['60vh', '100vh']}>
+    <Box w={'full'} h={['60vh', '90vh']}>
       <Image src={img2} 
        width="full" 
        height="full" 
        objectFit="cover"
        alt="Image 2"/>
-      <Heading color = {'white'} {...headingOptions}>Gaming Redefined</Heading>
+      <Heading size= {['2xl','4xl']} color = {'white'} {...headingOptions}>Gaming Redefined</Heading>
     </Box>
 
-    <Box w={'full'} h={['60vh', '100vh']}>
+    <Box w={'full'} h={['60vh', '90vh']}>
       <Image src={img3}
         width="full" 
         height="full" 
        objectFit="cover"
        alt="Image 2"/>
-      <Heading color = {'white'} {...headingOptions}>Emmersive Experience</Heading>
+      <Heading size= {['2xl','4xl']} color = {'white'} {...headingOptions}>Emmersive Experience</Heading>
     </Box>
 
-    <Box w={'full'} h={['60vh', '100vh']}>
+    <Box w={'full'} h={['60vh', '90vh']}>
       <Image src={img4}
         width="full" 
         height="full" 
        objectFit="cover"
        alt="Image 2"/>
-      <Heading color = {'white'} {...headingOptions}>Level Up Your Game</Heading>
+      <Heading size= {['2xl','4xl']} color = {'white'} {...headingOptions}>Level Up Your Game</Heading>
     </Box>
 
-    <Box w={'full'} h={['60vh', '100vh']}>
+    <Box w={'full'} h={['60vh', '90vh']}>
       <Image src={img5}
         width="full" 
         height="full" 
        objectFit="cover"
        alt="Image 2"/>
-      <Heading color = {'white'} {...headingOptions}>Fuel Your Passion</Heading>
+      <Heading size= {['2xl','4xl']} color = {'white'} {...headingOptions}>Fuel Your Passion</Heading>
     </Box>
 
-    <Box w={'full'} h={['60vh', '100vh']}>
+    <Box w={'full'} h={['60vh', '90vh']}>
       <Image src={img6}
         width="full" 
         height="full" 
        objectFit="cover"
        alt="Image 2"/>
-      <Heading color = {'white'} {...headingOptions}>Game On</Heading>
+      <Heading size= {['2xl','4xl']} color = {'white'} {...headingOptions}>Game On</Heading>
     </Box>
 
 
