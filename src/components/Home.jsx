@@ -88,7 +88,7 @@ const MyCarousel = () => (
   showThumbs={false}
   >
 
-    <Box w={'full'} h={'100vh'}>
+    <Box w={'full'} h={['80vh', '100vh']}>
       <Image src={img1}
           width="full" 
           height="full" 
@@ -97,7 +97,7 @@ const MyCarousel = () => (
       <Heading color = {'white'} {...headingOptions}>Beyond Reality</Heading>
     </Box>
 
-    <Box w={'full'} h={'100vh'}>
+    <Box w={'full'} h={['80vh', '100vh']}>
       <Image src={img2} 
        width="full" 
        height="full" 
@@ -106,7 +106,7 @@ const MyCarousel = () => (
       <Heading color = {'white'} {...headingOptions}>Gaming Redefined</Heading>
     </Box>
 
-    <Box w={'full'} h={'100vh'}>
+    <Box w={'full'} h={['80vh', '100vh']}>
       <Image src={img3}
         width="full" 
         height="full" 
@@ -115,7 +115,7 @@ const MyCarousel = () => (
       <Heading color = {'white'} {...headingOptions}>Emmersive Experience</Heading>
     </Box>
 
-    <Box w={'full'} h={'100vh'}>
+    <Box w={'full'} h={['80vh', '100vh']}>
       <Image src={img4}
         width="full" 
         height="full" 
@@ -124,7 +124,7 @@ const MyCarousel = () => (
       <Heading color = {'white'} {...headingOptions}>Level Up Your Game</Heading>
     </Box>
 
-    <Box w={'full'} h={'100vh'}>
+    <Box w={'full'} h={['80vh', '100vh']}>
       <Image src={img5}
         width="full" 
         height="full" 
@@ -133,7 +133,7 @@ const MyCarousel = () => (
       <Heading color = {'white'} {...headingOptions}>Fuel Your Passion</Heading>
     </Box>
 
-    <Box w={'full'} h={'100vh'}>
+    <Box w={'full'} h={['80vh', '100vh']}>
       <Image src={img6}
         width="full" 
         height="full" 
