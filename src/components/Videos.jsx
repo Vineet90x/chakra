@@ -1,5 +1,5 @@
 import { Heading, Stack, VStack,Text, Button ,Box} from '@chakra-ui/react'
-import React, { useState } from 'react'
+import React, { useState } from 'react' 
 
 const Videos = () => {
 
@@ -24,50 +24,66 @@ const [videoSrc,setVideoSrc] = useState(videosArr[0]);
   return (
     <Stack 
     direction={['column','row']}
-    h={'100vh'}
-    mt={['50px','40px']}>
-    <VStack w={'full'}>
+
+    mt={['50px','60px']}>
+    <VStack w={'full'}>   
     <Box 
-        width={['300', '800']} // Responsive width for mobile, tablet, and desktop
-        height={['200' , '500']}   // Responsive height for mobile, tablet, and deskto
-        overflow={'hidden'}      >         // Ensures proper scaling
-    <iframe
-    title='videos'
-    src={videoSrc}
-    allow="accelerometer; autoplay;"
-    allowFullScreen
-    >   
-    </iframe> 
-    </Box>
+        w={'full'}
+        position="relative" 
+        paddingBottom="56.25%"  
+        height={0}
+        overflow="hidden"
+        ml={['0','20']}
+        mt={['4','5']}
+      >
+        <iframe
+          title="videos"
+          src={videoSrc}
+          allow="accelerometer; autoplay;"
+          allowFullScreen
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            border: "0"
+          }}
+        ></iframe>
+      </Box>
+     
     <VStack alignItems={'flex-start'} p={'8'} w={'full'} >
     <Heading>Title</Heading>
     <Text>
-        Lorem ipsum dolor sit amet consectetur adipisicing.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis beatae hic distinctio maxime consectetur qui nesciunt explicabo ex nulla dolorem assumenda eos, quidem architecto tempora quo voluptate cum ab! Aspernatur?
     </Text>
     </VStack>
     </VStack>
+
     <VStack
     w={['full','xl']}
-    alignItems={'stretch'} 
+    alignItems={['center','stretch']} 
     p='8' 
     spacing={'8'}
-    overflowY={'auto'}
+    mt={['0','20']}
     >
-    
     {
     videosArr.map((item, index) => (
     <Button 
       variant={'ghost'} 
       colorScheme={'purple'} 
       onClick={() => setVideoSrc(item)}
+      overflow="hidden"
     >
       Video {index + 1}
     </Button>
   ))
 }
     </VStack>
+
     </Stack>
   )
 }
+
 
 export default Videos
